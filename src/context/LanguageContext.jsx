@@ -63,18 +63,24 @@ const translations = {
           subtitle: "صيانة شاملة وخدمة متنقلة نصل إليك في مكانك",
           href: "/companies/al-hareef-auto",
         },
+        {
+          id: "hamdan-shipping-clearing",
+          title: "حمدان للشحن والتخليص",
+          subtitle: "الشحن والتخليص الجمركي ومتابعة الشحنات",
+          href: "/companies/hamdan-shipping-clearing",
+        },
       ],
     },
     hero: {
       badge: "مجموعة حمدان للتجارة والاستثمار",
       title: "نبني المستقبل برؤية استثمارية متكاملة",
       subtitle:
-        "مجموعة رائدة تضم تحت مظلتها نخبة من المشاريع في قطاعات الضيافة، المطاعم، المقاولات، صيانة السيارات، وخدمات رجال الأعمال بمعايير عالمية.",
+        "مجموعة رائدة تضم تحت مظلتها نخبة من المشاريع في قطاعات الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات رجال الأعمال بمعايير عالمية.",
       primaryBtn: "استكشف شركاتنا",
       secondaryBtn: "تواصل معنا",
       stats: [
-        { value: "+7", label: "كيانات ومشاريع تابعة" },
-        { value: "4", label: "قطاعات حيوية" },
+        { value: "+15", label: "عاماً من الخبرة العملية" },
+        { value: "7", label: "كيانات وشركات تابعة" },
         { value: "100%", label: "التزام بالجودة والتميز" },
       ],
     },
@@ -84,6 +90,7 @@ const translations = {
       description:
         "تعمل مجموعة حمدان للتجارة والاستثمار بخبرة تمتد لأكثر من 15 عاماً ككيان مؤسسي يجمع بين التنوع القطاعي والانضباط التشغيلي. نعمل على تطوير وإدارة مشاريع عالية الكفاءة تلبي احتياجات السوق اليومية وتدعم نمو الأعمال.",
       foundedBadge: "خبرة أكثر من 15 عاماً",
+      experienceValue: "+15 عاماً",
       highlights: [
         {
           title: "حوكمة وتشغيل مؤسسي",
@@ -91,7 +98,7 @@ const translations = {
         },
         {
           title: "تنوع يخدم السوق والمستثمر",
-          desc: "تكامل بين الضيافة، المطاعم، المقاولات، صيانة السيارات، وخدمات الأعمال.",
+          desc: "تكامل بين الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات الأعمال.",
         },
         {
           title: "موثوقية وسرعة إنجاز",
@@ -398,6 +405,42 @@ const translations = {
             },
           ],
         },
+        {
+          slug: "hamdan-shipping-clearing",
+          category: "الشحن والتخليص الجمركي",
+          name: "حمدان للشحن والتخليص — HAMDAN SHIPPING & CLEARING",
+          shortDesc:
+            "حلول متكاملة للشحن الدولي والمحلي، التخليص الجمركي، ومتابعة الشحنات بدقة وكفاءة.",
+          fullDesc:
+            "تقدم شركة حمدان للشحن والتخليص (HAMDAN SHIPPING & CLEARING) خدمات الشحن والتخليص الجمركي وتنسيق حركة البضائع والوثائق بكفاءة وموثوقية لخدمة الأفراد والشركات.",
+          location: "دبي — الجداف، مبنى حور 18",
+          phone: "+971 55 998 7822",
+          image: businessServicesImg,
+          highlights: [
+            "تنسيق عمليات الشحن ومتابعة التخليص الجمركي بسرعة وانضباط",
+            "مناسبة للشحنات التجارية والأفراد مع وضوح في الإجراءات",
+            "تكامل مباشر مع خدمات المجموعة في دبي",
+          ],
+          menuCategories: [
+            {
+              title: "خدمات الشحن والتخليص",
+              items: [
+                {
+                  name: "التخليص الجمركي ومتابعة المستندات",
+                  price: "حسب الخدمة",
+                },
+                {
+                  name: "تنسيق الشحن والمتابعة اللوجستية",
+                  price: "حسب الشحنة",
+                },
+                {
+                  name: "استشارات الشحن وحلول الأعمال",
+                  price: "حسب الطلب",
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     contact: {
@@ -459,6 +502,10 @@ const translations = {
             value: "al-hareef-auto",
             label: "شركة الحريف لصيانة السيارات (متنقلة)",
           },
+          {
+            value: "hamdan-shipping-clearing",
+            label: "حمدان للشحن والتخليص (HAMDAN SHIPPING & CLEARING)",
+          },
         ],
         messageLabel: "تفاصيل الرسالة",
         messagePlaceholder: "اكتب استفسارك أو طلبك بالتفصيل...",
@@ -470,7 +517,7 @@ const translations = {
     },
     footer: {
       description:
-        "مجموعة حمدان للتجارة والاستثمار — خبرة أكثر من 15 عاماً في تقديم حلول وخدمات متكاملة في المطاعم، الكافيهات، المقاولات، صيانة السيارات، وخدمات رجال الأعمال.",
+        "مجموعة حمدان للتجارة والاستثمار — خبرة أكثر من 15 عاماً في تقديم حلول وخدمات متكاملة في المطاعم، الكافيهات، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات رجال الأعمال.",
       quickLinksTitle: "روابط سريعة",
       sectorsTitle: "شركاتنا وقطاعاتنا",
       contactTitle: "تواصل معنا",
@@ -528,18 +575,24 @@ const translations = {
           subtitle: "Full auto repair & mobile service to your location",
           href: "/companies/al-hareef-auto",
         },
+        {
+          id: "hamdan-shipping-clearing",
+          title: "Hamdan Shipping & Clearing",
+          subtitle: "Shipping, customs clearing & cargo coordination",
+          href: "/companies/hamdan-shipping-clearing",
+        },
       ],
     },
     hero: {
       badge: "HAMDAN GROUP — TRADE & INVESTMENT",
       title: "Building the Future with an Integrated Investment Vision",
       subtitle:
-        "A leading conglomerate uniting premier ventures across hospitality, dining, contracting, automotive repair, and corporate PRO services to global standards.",
+        "A leading conglomerate uniting premier ventures across hospitality, dining, contracting, automotive repair, shipping & clearing, and corporate PRO services to global standards.",
       primaryBtn: "Explore Our Companies",
       secondaryBtn: "Contact Us",
       stats: [
-        { value: "+7", label: "Subsidiaries & Branches" },
-        { value: "4", label: "Core Sectors" },
+        { value: "15+", label: "Years of Experience" },
+        { value: "7", label: "Subsidiaries & Ventures" },
         { value: "100%", label: "Commitment to Excellence" },
       ],
     },
@@ -549,6 +602,7 @@ const translations = {
       description:
         "Backed by over 15 years of experience, Hamdan Group for Trade & Investment operates as an institutional conglomerate combining sectoral diversity with operational discipline—developing and managing high-efficiency ventures that serve everyday market needs and support business growth.",
       foundedBadge: "Over 15 Years Experience",
+      experienceValue: "15+ Years",
       highlights: [
         {
           title: "Institutional Governance",
@@ -556,7 +610,7 @@ const translations = {
         },
         {
           title: "Balanced Market Portfolio",
-          desc: "Synergy across hospitality, dining, contracting, automotive repair, and business services.",
+          desc: "Synergy across hospitality, dining, contracting, automotive repair, shipping & clearing, and business services.",
         },
         {
           title: "Reliability & Execution Speed",
@@ -862,6 +916,42 @@ const translations = {
             },
           ],
         },
+        {
+          slug: "hamdan-shipping-clearing",
+          category: "Shipping & Customs Clearing",
+          name: "HAMDAN SHIPPING & CLEARING",
+          shortDesc:
+            "Integrated shipping, customs clearing, and cargo coordination solutions for individuals and businesses.",
+          fullDesc:
+            "Hamdan Shipping & Clearing delivers shipping coordination, customs clearance support, and documentation handling with reliability and operational clarity.",
+          location: "Dubai — Al Jadaf, Hoor 18 Building",
+          phone: "+971 55 998 7822",
+          image: businessServicesImg,
+          highlights: [
+            "Streamlined shipping coordination and customs clearing follow-up",
+            "Suitable for commercial cargo and business inquiries",
+            "Backed by Hamdan Group operations in Dubai",
+          ],
+          menuCategories: [
+            {
+              title: "Shipping & Clearing Services",
+              items: [
+                {
+                  name: "Customs Clearing & Documentation",
+                  price: "By Service",
+                },
+                {
+                  name: "Shipment Coordination & Logistics",
+                  price: "By Shipment",
+                },
+                {
+                  name: "Shipping Inquiries & Business Support",
+                  price: "By Request",
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     contact: {
@@ -923,6 +1013,10 @@ const translations = {
             value: "al-hareef-auto",
             label: "Al Hareef Auto Maintenance (Mobile)",
           },
+          {
+            value: "hamdan-shipping-clearing",
+            label: "Hamdan Shipping & Clearing",
+          },
         ],
         messageLabel: "Message Details",
         messagePlaceholder: "Write your inquiry or request in detail...",
@@ -934,7 +1028,7 @@ const translations = {
     },
     footer: {
       description:
-        "Hamdan Group for Trade & Investment — over 15 years of experience delivering integrated solutions across restaurants, cafes, contracting, auto maintenance, and business services.",
+        "Hamdan Group for Trade & Investment — over 15 years of experience delivering integrated solutions across restaurants, cafes, contracting, auto maintenance, shipping & clearing, and business services.",
       quickLinksTitle: "Quick Links",
       sectorsTitle: "Our Companies & Sectors",
       contactTitle: "Contact Us",
