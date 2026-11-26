@@ -561,9 +561,9 @@ const translations = {
         {
           id: "email",
           label: "البريد الإلكتروني",
-          value: "Hamdanco@hotmail.com",
+          value: "Hamdanco28@hotmail.com",
           note: "للاستفسارات المؤسسية والأعمال",
-          href: "mailto:Hamdanco@hotmail.com",
+          href: "mailto:Hamdanco28@hotmail.com",
         },
         {
           id: "hours",
@@ -1164,9 +1164,9 @@ const translations = {
         {
           id: "email",
           label: "Email Address",
-          value: "Hamdanco@hotmail.com",
+          value: "Hamdanco28@hotmail.com",
           note: "For corporate & business inquiries",
-          href: "mailto:Hamdanco@hotmail.com",
+          href: "mailto:Hamdanco28@hotmail.com",
         },
         {
           id: "hours",
