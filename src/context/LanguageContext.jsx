@@ -14,6 +14,15 @@ const businessServicesImg =
 const rzmContractingImg =
   "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80";
 
+const shippingClearingImg =
+  "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80";
+
+const whoovContractingImg =
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80";
+
+const nstGeneralTradingImg =
+  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80";
+
 const translations = {
   ar: {
     brand: {
@@ -69,18 +78,30 @@ const translations = {
           subtitle: "الشحن والتخليص الجمركي ومتابعة الشحنات",
           href: "/companies/hamdan-shipping-clearing",
         },
+        {
+          id: "whoov-contracting",
+          title: "هوف للمقاولات ش.ذ.م.م",
+          subtitle: "تنفيذ مشاريع المقاولات والأعمال الإنشائية",
+          href: "/companies/whoov-contracting",
+        },
+        {
+          id: "nst-general-trading",
+          title: "إن إس تي للتجارة العامة ش.ذ.م.م",
+          subtitle: "التجارة العامة وتوريد المنتجات والحلول التجارية",
+          href: "/companies/nst-general-trading",
+        },
       ],
     },
     hero: {
       badge: "مجموعة حمدان للتجارة والاستثمار",
       title: "نبني المستقبل برؤية استثمارية متكاملة",
       subtitle:
-        "مجموعة رائدة تضم تحت مظلتها نخبة من المشاريع في قطاعات الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات رجال الأعمال بمعايير عالمية.",
+        "مجموعة رائدة تضم تحت مظلتها نخبة من المشاريع في قطاعات الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، التجارة العامة، وخدمات رجال الأعمال بمعايير عالمية.",
       primaryBtn: "استكشف شركاتنا",
       secondaryBtn: "تواصل معنا",
       stats: [
         { value: "+15", label: "عاماً من الخبرة العملية" },
-        { value: "7", label: "كيانات وشركات تابعة" },
+        { value: "9", label: "كيانات وشركات تابعة" },
         { value: "100%", label: "التزام بالجودة والتميز" },
       ],
     },
@@ -98,7 +119,7 @@ const translations = {
         },
         {
           title: "تنوع يخدم السوق والمستثمر",
-          desc: "تكامل بين الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات الأعمال.",
+          desc: "تكامل بين الضيافة، المطاعم، المقاولات، صيانة السيارات، الشحن والتخليص، التجارة العامة، وخدمات الأعمال.",
         },
         {
           title: "موثوقية وسرعة إنجاز",
@@ -233,7 +254,7 @@ const translations = {
                   price: "متنوع",
                 },
                 { name: "لاتيه، كابتشينو، وسبانيش لاتيه", price: "متنوع" },
-                { name: "قهوة مقطرة (V60) وشاي مختص", price: "متنوع" },
+                { name: "قهوة وشاي", price: "متنوع" },
               ],
             },
             {
@@ -415,7 +436,7 @@ const translations = {
             "تقدم شركة حمدان للشحن والتخليص (HAMDAN SHIPPING & CLEARING) خدمات الشحن والتخليص الجمركي وتنسيق حركة البضائع والوثائق بكفاءة وموثوقية لخدمة الأفراد والشركات.",
           location: "دبي — الجداف، مبنى حور 18",
           phone: "+971 55 998 7822",
-          image: businessServicesImg,
+          image: shippingClearingImg,
           highlights: [
             "تنسيق عمليات الشحن ومتابعة التخليص الجمركي بسرعة وانضباط",
             "مناسبة للشحنات التجارية والأفراد مع وضوح في الإجراءات",
@@ -435,6 +456,78 @@ const translations = {
                 },
                 {
                   name: "استشارات الشحن وحلول الأعمال",
+                  price: "حسب الطلب",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          slug: "whoov-contracting",
+          category: "المقاولات والأعمال الإنشائية",
+          name: "هوف للمقاولات ش.ذ.م.م — WHOOV CONTRACTING L.L.C",
+          shortDesc:
+            "تنفيذ أعمال المقاولات والإنشاءات والتجهيزات وفق معايير الجودة والالتزام بالجدول الزمني.",
+          fullDesc:
+            "تقدم شركة هوف للمقاولات ش.ذ.م.م (WHOOV CONTRACTING L.L.C) خدمات المقاولات والأعمال الإنشائية والتشطيبات بدقة وانضباط عملي لدعم المشاريع السكنية والتجارية ضمن منظومة مجموعة حمدان.",
+          location: "دبي — الإمارات العربية المتحدة",
+          phone: "+971 55 998 7822",
+          image: whoovContractingImg,
+          highlights: [
+            "تنفيذ منظم وفق المواصفات الفنية ومعايير السلامة",
+            "متابعة هندسية وتنفيذية دقيقة من البداية حتى التسليم",
+            "مرونة في خدمة المشاريع التجارية والإنشائية المتنوعة",
+          ],
+          menuCategories: [
+            {
+              title: "أعمال المقاولات والتنفيذ",
+              items: [
+                {
+                  name: "أعمال البناء والمقاولات العامة",
+                  price: "حسب المشروع",
+                },
+                {
+                  name: "التشطيبات والأعمال الإنشائية والخدمية",
+                  price: "حسب المشروع",
+                },
+                {
+                  name: "الصيانة والتطوير الإنشائي للمواقع",
+                  price: "حسب الطلب",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          slug: "nst-general-trading",
+          category: "التجارة العامة والتوريد",
+          name: "إن إس تي للتجارة العامة ش.ذ.م.م — N S T GENERAL TRADING L.L.C",
+          shortDesc:
+            "خدمات التجارة العامة وتوريد البضائع والمنتجات والحلول التجارية بكفاءة وموثوقية.",
+          fullDesc:
+            "تعمل شركة إن إس تي للتجارة العامة ش.ذ.م.م (N S T GENERAL TRADING L.L.C) في مجال التجارة العامة وتوريد المنتجات والسلع التجارية لتلبية احتياجات الشركات والسوق وفق معايير احترافية.",
+          location: "دبي — الإمارات العربية المتحدة",
+          phone: "+971 55 998 7822",
+          image: nstGeneralTradingImg,
+          highlights: [
+            "توريد منتظم وموثوق يلبي متطلبات السوق والشركات",
+            "إدارة فعالة لعمليات التوريد والتنسيق التجاري",
+            "مرونة عالية في التعامل مع مختلف الطلبات التجارية",
+          ],
+          menuCategories: [
+            {
+              title: "خدمات التجارة العامة والتوريد",
+              items: [
+                {
+                  name: "التجارة العامة وتوريد المنتجات والسلع",
+                  price: "حسب الطلب",
+                },
+                {
+                  name: "توفير احتياجات الشركات والمنشآت التجارية",
+                  price: "حسب الاتفاق",
+                },
+                {
+                  name: "التنسيق التجاري وطلبات التوريد الخاصة",
                   price: "حسب الطلب",
                 },
               ],
@@ -506,6 +599,15 @@ const translations = {
             value: "hamdan-shipping-clearing",
             label: "حمدان للشحن والتخليص (HAMDAN SHIPPING & CLEARING)",
           },
+          {
+            value: "whoov-contracting",
+            label: "هوف للمقاولات ش.ذ.م.م (WHOOV CONTRACTING L.L.C)",
+          },
+          {
+            value: "nst-general-trading",
+            label:
+              "إن إس تي للتجارة العامة ش.ذ.م.م (N S T GENERAL TRADING L.L.C)",
+          },
         ],
         messageLabel: "تفاصيل الرسالة",
         messagePlaceholder: "اكتب استفسارك أو طلبك بالتفصيل...",
@@ -517,7 +619,7 @@ const translations = {
     },
     footer: {
       description:
-        "مجموعة حمدان للتجارة والاستثمار — خبرة أكثر من 15 عاماً في تقديم حلول وخدمات متكاملة في المطاعم، الكافيهات، المقاولات، صيانة السيارات، الشحن والتخليص، وخدمات رجال الأعمال.",
+        "مجموعة حمدان للتجارة والاستثمار — خبرة أكثر من 15 عاماً في تقديم حلول وخدمات متكاملة في المطاعم، الكافيهات، المقاولات، صيانة السيارات، الشحن والتخليص، التجارة العامة، وخدمات رجال الأعمال.",
       quickLinksTitle: "روابط سريعة",
       sectorsTitle: "شركاتنا وقطاعاتنا",
       contactTitle: "تواصل معنا",
@@ -581,18 +683,30 @@ const translations = {
           subtitle: "Shipping, customs clearing & cargo coordination",
           href: "/companies/hamdan-shipping-clearing",
         },
+        {
+          id: "whoov-contracting",
+          title: "WHOOV Contracting L.L.C",
+          subtitle: "Contracting, construction & execution services",
+          href: "/companies/whoov-contracting",
+        },
+        {
+          id: "nst-general-trading",
+          title: "N S T General Trading L.L.C",
+          subtitle: "General trading, supply & commercial solutions",
+          href: "/companies/nst-general-trading",
+        },
       ],
     },
     hero: {
       badge: "HAMDAN GROUP — TRADE & INVESTMENT",
       title: "Building the Future with an Integrated Investment Vision",
       subtitle:
-        "A leading conglomerate uniting premier ventures across hospitality, dining, contracting, automotive repair, shipping & clearing, and corporate PRO services to global standards.",
+        "A leading conglomerate uniting premier ventures across hospitality, dining, contracting, automotive repair, shipping & clearing, general trading, and corporate PRO services to global standards.",
       primaryBtn: "Explore Our Companies",
       secondaryBtn: "Contact Us",
       stats: [
         { value: "15+", label: "Years of Experience" },
-        { value: "7", label: "Subsidiaries & Ventures" },
+        { value: "9", label: "Subsidiaries & Ventures" },
         { value: "100%", label: "Commitment to Excellence" },
       ],
     },
@@ -610,7 +724,7 @@ const translations = {
         },
         {
           title: "Balanced Market Portfolio",
-          desc: "Synergy across hospitality, dining, contracting, automotive repair, shipping & clearing, and business services.",
+          desc: "Synergy across hospitality, dining, contracting, automotive repair, shipping & clearing, general trading, and business services.",
         },
         {
           title: "Reliability & Execution Speed",
@@ -740,7 +854,7 @@ const translations = {
                   price: "Varied",
                 },
                 { name: "Latte, Cappuccino & Spanish Latte", price: "Varied" },
-                { name: "Pour-Over (V60) & Specialty Teas", price: "Varied" },
+                { name: "Coffee & Tea", price: "Varied" },
               ],
             },
             {
@@ -791,18 +905,18 @@ const translations = {
               ],
             },
             {
-              title: "Visa & Government PRO Services",
+              title: "Residency & Government PRO Services",
               items: [
                 {
-                  name: "Investor & Employee Residency Visa Processing",
+                  name: "Investor & Employee Residency Visa Issuance/Renewal",
                   price: "By Service",
                 },
                 {
-                  name: "MOHRE Labor Services, Medical & Emirates ID",
+                  name: "Labor Processing, Medical Fitness & Emirates ID",
                   price: "By Service",
                 },
                 {
-                  name: "Legal Typing, Contracts & Document Attestation",
+                  name: "Legal Typing & Document Attestation",
                   price: "By Service",
                 },
               ],
@@ -814,31 +928,31 @@ const translations = {
           category: "General Contracting & Construction",
           name: "R Z M CONTRACTING",
           shortDesc:
-            "Execution of construction projects, general contracting, interior fit-out, and engineering maintenance to high standards.",
+            "Execution of construction and general contracting projects, interior fit-outs, and engineering maintenance to high standards.",
           fullDesc:
-            "R Z M Contracting delivers integrated solutions in the construction and general contracting sector—covering residential and commercial buildings, interior finishing and fit-out, and structural renovation according to strict engineering specifications and schedules.",
+            "R Z M Contracting delivers integrated construction and general contracting solutions—covering residential and commercial buildings, interior/exterior fit-outs, and renovation and maintenance according to strict engineering standards and schedules.",
           location: "Dubai — United Arab Emirates",
           phone: "Available via Group Desk",
           image: rzmContractingImg,
           highlights: [
-            "Strict adherence to quality and occupational safety standards on all sites",
-            "Integrated engineering management with on-schedule project delivery",
-            "Proven capability across residential, commercial, and fit-out works",
+            "Strict adherence to quality and occupational safety standards across sites",
+            "Integrated engineering management and on-schedule project delivery",
+            "Proven capability in residential, commercial, and fit-out works",
           ],
           menuCategories: [
             {
               title: "General Contracting & Construction",
               items: [
                 {
-                  name: "Residential, Commercial & Industrial Construction",
+                  name: "Residential, Commercial & Industrial Building Works",
                   price: "By Project",
                 },
                 {
-                  name: "Structural & Civil Engineering Works",
+                  name: "Structural & Civil Contracting Works",
                   price: "By Project",
                 },
                 {
-                  name: "Project Management & Site Supervision",
+                  name: "Project Management & Engineering Supervision",
                   price: "By Project",
                 },
               ],
@@ -847,7 +961,7 @@ const translations = {
               title: "Fit-Out, Finishing & Maintenance",
               items: [
                 {
-                  name: "Interior & Exterior Finishing and Decoration",
+                  name: "Interior & Exterior Finishing and Decor",
                   price: "By Project",
                 },
                 {
@@ -864,24 +978,23 @@ const translations = {
         },
         {
           slug: "al-hareef-auto",
-          category: "Auto Maintenance & Mobile Workshop",
+          category: "Auto Maintenance & Mobile Service",
           name: "AL HAREEF AUTO MAINTENANCE",
           shortDesc:
-            "Comprehensive auto care and a fully equipped mobile workshop that comes to your location—home, office, or roadside.",
+            "Comprehensive auto care and a fully equipped mobile service that comes to your location—home, office, or roadside.",
           fullDesc:
-            "Al Hareef Auto Maintenance provides full repair and maintenance services through our workshop and equipped mobile service fleet—coming directly to your vehicle wherever you are to save you time and travel.",
-          location:
-            "Dubai — United Arab Emirates (Mobile Service to Your Location)",
+            "Al Hareef Auto Maintenance provides complete maintenance and repair through its workshop and a fleet of equipped mobile service units, reaching your vehicle wherever you are to save time and hassle.",
+          location: "Dubai — United Arab Emirates (Mobile Service to You)",
           phone: "+971 55 998 7822",
           image: alHareefImg,
           highlights: [
-            "Mobile service fleet that reaches your location wherever you are",
-            "Specialized technicians and vehicles equipped with modern diagnostic tools",
-            "Fast periodic service, fault diagnostics, and on-site assistance",
+            "Mobile service units reaching you wherever you are",
+            "Skilled technicians and vehicles equipped with modern diagnostic tools",
+            "Fast periodic service, fault diagnostics, and on-site support",
           ],
           menuCategories: [
             {
-              title: "Mobile Maintenance Services (At Your Location)",
+              title: "Mobile Auto Services (At Your Location)",
               items: [
                 {
                   name: "Oil & Filter Change at Client Location",
@@ -892,13 +1005,13 @@ const translations = {
                   price: "By Service",
                 },
                 {
-                  name: "Battery, Brake & Quick On-Site Service",
+                  name: "Battery, Brake & Quick On-Site Maintenance",
                   price: "By Service",
                 },
               ],
             },
             {
-              title: "Mechanical, Electrical & Full Care",
+              title: "Mechanical, Electrical & General Repair",
               items: [
                 {
                   name: "Periodic & Preventive Maintenance for All Vehicles",
@@ -909,7 +1022,7 @@ const translations = {
                   price: "By Condition",
                 },
                 {
-                  name: "Individual, Fleet & Corporate Vehicle Care",
+                  name: "Fleet & Corporate Vehicle Maintenance",
                   price: "By Agreement",
                 },
               ],
@@ -921,31 +1034,103 @@ const translations = {
           category: "Shipping & Customs Clearing",
           name: "HAMDAN SHIPPING & CLEARING",
           shortDesc:
-            "Integrated shipping, customs clearing, and cargo coordination solutions for individuals and businesses.",
+            "Integrated shipping, customs clearance, and cargo coordination with accuracy and reliability.",
           fullDesc:
-            "Hamdan Shipping & Clearing delivers shipping coordination, customs clearance support, and documentation handling with reliability and operational clarity.",
+            "Hamdan Shipping & Clearing provides shipping, customs clearance, and shipment coordination services with efficiency and clarity for individuals and businesses.",
           location: "Dubai — Al Jadaf, Hoor 18 Building",
           phone: "+971 55 998 7822",
-          image: businessServicesImg,
+          image: shippingClearingImg,
           highlights: [
-            "Streamlined shipping coordination and customs clearing follow-up",
-            "Suitable for commercial cargo and business inquiries",
-            "Backed by Hamdan Group operations in Dubai",
+            "Structured shipping coordination and customs clearance follow-up",
+            "Suitable for commercial cargo and individual shipments",
+            "Direct integration with Hamdan Group operations in Dubai",
           ],
           menuCategories: [
             {
               title: "Shipping & Clearing Services",
               items: [
                 {
-                  name: "Customs Clearing & Documentation",
+                  name: "Customs Clearance & Documentation Follow-Up",
                   price: "By Service",
                 },
                 {
-                  name: "Shipment Coordination & Logistics",
+                  name: "Shipment & Logistics Coordination",
                   price: "By Shipment",
                 },
                 {
-                  name: "Shipping Inquiries & Business Support",
+                  name: "Shipping Consultation & Business Support",
+                  price: "By Request",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          slug: "whoov-contracting",
+          category: "Contracting & Construction",
+          name: "WHOOV CONTRACTING L.L.C",
+          shortDesc:
+            "Contracting, construction, and execution services delivered with quality and schedule discipline.",
+          fullDesc:
+            "WHOOV Contracting L.L.C provides contracting, construction, and execution services with practical discipline to support residential and commercial projects within Hamdan Group.",
+          location: "Dubai — United Arab Emirates",
+          phone: "+971 55 998 7822",
+          image: whoovContractingImg,
+          highlights: [
+            "Organized execution aligned with technical and safety standards",
+            "Consistent supervision from initiation through handover",
+            "Adaptable support across commercial and construction needs",
+          ],
+          menuCategories: [
+            {
+              title: "Contracting & Execution Services",
+              items: [
+                {
+                  name: "Building & General Contracting Works",
+                  price: "By Project",
+                },
+                {
+                  name: "Finishing, Construction & Site Works",
+                  price: "By Project",
+                },
+                {
+                  name: "Facility Maintenance & Site Enhancement",
+                  price: "By Request",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          slug: "nst-general-trading",
+          category: "General Trading & Supply",
+          name: "N S T GENERAL TRADING L.L.C",
+          shortDesc:
+            "General trading, product supply, and commercial solutions delivered with reliability and efficiency.",
+          fullDesc:
+            "N S T General Trading L.L.C operates in general trading and commercial supply, serving business and market requirements with dependable sourcing and coordination.",
+          location: "Dubai — United Arab Emirates",
+          phone: "+971 55 998 7822",
+          image: nstGeneralTradingImg,
+          highlights: [
+            "Dependable supply tailored to business and market demands",
+            "Streamlined procurement and commercial coordination",
+            "Responsive handling of varied trading requests",
+          ],
+          menuCategories: [
+            {
+              title: "General Trading & Supply Services",
+              items: [
+                {
+                  name: "General Trading & Commercial Goods Supply",
+                  price: "By Request",
+                },
+                {
+                  name: "Corporate & Commercial Procurement Support",
+                  price: "By Agreement",
+                },
+                {
+                  name: "Commercial Coordination & Custom Orders",
                   price: "By Request",
                 },
               ],
@@ -956,12 +1141,12 @@ const translations = {
     },
     contact: {
       eyebrow: "CONTACT US",
-      title: "We Welcome Your Inquiries & Connections",
+      title: "We Welcome Your Inquiries",
       subtitle:
         "Reach out to the Hamdan Group team regarding our companies, sectors, partnerships, or business requests.",
       infoTitle: "Direct Contact Information",
       infoSubtitle:
-        "Connect with us through the channels below or send a message directly using the form.",
+        "Connect with us through the channels below or send a message directly via the form.",
       cards: [
         {
           id: "location",
@@ -973,7 +1158,7 @@ const translations = {
           id: "phone",
           label: "Direct Phone",
           value: "+971 55 998 7822",
-          note: "Available for inquiries & requests",
+          note: "Available for inquiries & orders",
           href: "tel:+971559987822",
         },
         {
@@ -987,18 +1172,18 @@ const translations = {
           id: "hours",
           label: "Working Hours",
           value: "Monday to Saturday",
-          note: "Sunday: Varies by branch",
+          note: "Sunday: Varies by branch activity",
         },
       ],
       form: {
         title: "Send Your Message",
         nameLabel: "Full Name",
-        namePlaceholder: "Enter your full name",
+        namePlaceholder: "Enter your name",
         emailLabel: "Email Address",
         emailPlaceholder: "name@example.com",
         phoneLabel: "Phone Number",
         phonePlaceholder: "+971 50 000 0000",
-        sectorLabel: "Relevant Entity or Sector",
+        sectorLabel: "Target Company or Sector",
         sectorOptions: [
           { value: "general", label: "Group Management — General Inquiry" },
           { value: "grand-levant", label: "Grand Levant (Restaurant)" },
@@ -1017,25 +1202,33 @@ const translations = {
             value: "hamdan-shipping-clearing",
             label: "Hamdan Shipping & Clearing",
           },
+          {
+            value: "whoov-contracting",
+            label: "WHOOV Contracting L.L.C",
+          },
+          {
+            value: "nst-general-trading",
+            label: "N S T General Trading L.L.C",
+          },
         ],
         messageLabel: "Message Details",
         messagePlaceholder: "Write your inquiry or request in detail...",
         submitBtn: "Send Message",
         successMessage:
-          "Your message has been received! Our team will review it and get back to you shortly.",
+          "Your message has been received! We will review it and get back to you shortly.",
         sendAnother: "Send Another Message",
       },
     },
     footer: {
       description:
-        "Hamdan Group for Trade & Investment — over 15 years of experience delivering integrated solutions across restaurants, cafes, contracting, auto maintenance, shipping & clearing, and business services.",
+        "Hamdan Group for Trade & Investment — over 15 years of experience delivering integrated solutions across dining, cafes, contracting, auto maintenance, shipping & clearing, general trading, and corporate PRO services.",
       quickLinksTitle: "Quick Links",
       sectorsTitle: "Our Companies & Sectors",
       contactTitle: "Contact Us",
       workingHoursLabel: "Working Hours:",
       workingHoursValue: "Monday to Saturday",
       copyright: "All Rights Reserved © Hamdan Group for Trade & Investment",
-      foundedNote: "Over 15+ Years Experience • Dubai, United Arab Emirates",
+      foundedNote: "Over 15 Years of Experience • Dubai, UAE",
     },
   },
 };
@@ -1043,12 +1236,24 @@ const translations = {
 const LanguageContext = createContext(null);
 
 export const LanguageProvider = ({ children }) => {
-  const [lang, setLang] = useState("ar");
+  const [lang, setLang] = useState(() => {
+    try {
+      const saved = localStorage.getItem("hamdan_lang");
+      return saved === "en" ? "en" : "ar";
+    } catch {
+      return "ar";
+    }
+  });
 
   const isAr = lang === "ar";
   const t = translations[lang] || translations.ar;
 
   useEffect(() => {
+    try {
+      localStorage.setItem("hamdan_lang", lang);
+    } catch {
+      // ignore storage errors
+    }
     document.documentElement.lang = lang;
     document.documentElement.dir = isAr ? "rtl" : "ltr";
   }, [lang, isAr]);
@@ -1074,5 +1279,3 @@ export const useLanguage = () => {
   }
   return ctx;
 };
-
-export default LanguageContext;

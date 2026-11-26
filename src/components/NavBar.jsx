@@ -157,7 +157,7 @@ const Navbar = () => {
             </Link>
           </nav>
 
-          {/* Language & Mobile Menu Buttons */}
+          
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <button
               type="button"
@@ -185,7 +185,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Drawer Navigation */}
+     
       {isMobileMenuOpen && (
         <div
           dir={isAr ? "rtl" : "ltr"}
