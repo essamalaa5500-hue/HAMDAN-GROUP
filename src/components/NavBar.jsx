@@ -76,7 +76,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          
           <nav
             dir={isAr ? "rtl" : "ltr"}
             className="hidden md:flex items-center gap-7 lg:gap-8 text-sm lg:text-base font-medium shrink-0"

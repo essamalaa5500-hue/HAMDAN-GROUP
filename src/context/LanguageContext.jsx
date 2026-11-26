@@ -114,7 +114,7 @@ const translations = {
       experienceValue: "+15 عاماً",
       highlights: [
         {
-          title: "حوكمة وتشغيل مؤسسي",
+          title: "تشغيل مؤسسي",
           desc: "إدارة واضحة ومعايير جودة موحدة عبر كافة الفروع والقطاعات.",
         },
         {

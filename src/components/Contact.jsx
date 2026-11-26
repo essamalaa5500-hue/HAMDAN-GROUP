@@ -79,7 +79,7 @@ const Contact = () => {
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          {/* بطاقات معلومات التواصل وزر واتساب */}
+        
           <Reveal
             variant="up"
             delay={120}
@@ -134,7 +134,6 @@ const Contact = () => {
                 })}
               </div>
 
-              {/* زر واتساب مباشر */}
               <div className="mt-7 pt-6 border-t border-white/10">
                 <a
                   href={whatsappUrl}
@@ -151,7 +150,6 @@ const Contact = () => {
             </div>
           </Reveal>
 
-          {/* نموذج التواصل */}
           <Reveal
             variant="up"
             delay={220}
