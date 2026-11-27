@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   MapPin,
   Phone,
@@ -7,11 +8,13 @@ import {
   Send,
   CheckCircle2,
   MessageSquare,
+  AlertCircle,
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import Reveal from "./Reveal";
 
 const WHATSAPP_NUMBER = "971559987822";
+const RECIPIENT_EMAIL = "hamdanco74@gmail.com";
 
 const iconsMap = {
   location: MapPin,
@@ -32,20 +35,73 @@ const Contact = () => {
   const { isAr, t } = useLanguage();
   const [formData, setFormData] = useState(initialForm);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errorMsg) setErrorMsg("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setErrorMsg("");
+    setSending(true);
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSending(false);
+      setErrorMsg(
+        isAr
+          ? "إعدادات البريد الإلكتروني غير مكتملة. تأكد من ملف .env وأعد تشغيل السيرفر."
+          : "Email configuration is missing. Please check your .env file and restart the dev server.",
+      );
+      return;
+    }
+
+    const selectedSectorObj = t.contact.form.sectorOptions.find(
+      (opt) => opt.value === formData.sector,
+    );
+    const sectorLabel = selectedSectorObj
+      ? selectedSectorObj.label
+      : formData.sector;
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          title: sectorLabel,
+          sector: sectorLabel,
+          email: formData.email,
+          phone: formData.phone || (isAr ? "غير مذكور" : "Not provided"),
+          message: formData.message,
+          to_email: RECIPIENT_EMAIL,
+        },
+        { publicKey },
+      );
+      setSubmitted(true);
+    } catch (err) {
+      console.error("EmailJS Error:", err?.status, err?.text, err);
+      setErrorMsg(
+        isAr
+          ? "تعذر إرسال الرسالة حالياً. يرجى المحاولة مرة أخرى أو التواصل عبر واتساب."
+          : "Failed to send message right now. Please try again or contact us via WhatsApp.",
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleReset = () => {
     setFormData(initialForm);
     setSubmitted(false);
+    setErrorMsg("");
   };
 
   const whatsappMessage = encodeURIComponent(
@@ -79,7 +135,6 @@ const Contact = () => {
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        
           <Reveal
             variant="up"
             delay={120}
@@ -179,6 +234,16 @@ const Contact = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
+                  {errorMsg && (
+                    <div
+                      role="alert"
+                      className="flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm font-semibold"
+                    >
+                      <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                      <span>{errorMsg}</span>
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label
@@ -282,9 +347,16 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#0B192C] hover:bg-[#163154] text-[#E6C567] font-bold text-sm sm:text-base shadow-md transition-colors cursor-pointer"
+                    disabled={sending}
+                    className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#0B192C] hover:bg-[#163154] disabled:opacity-60 disabled:cursor-not-allowed text-[#E6C567] font-bold text-sm sm:text-base shadow-md transition-colors cursor-pointer"
                   >
-                    <span>{t.contact.form.submitBtn}</span>
+                    <span>
+                      {sending
+                        ? isAr
+                          ? "جاري الإرسال..."
+                          : "Sending..."
+                        : t.contact.form.submitBtn}
+                    </span>
                     <Send className="w-4 h-4" />
                   </button>
                 </form>

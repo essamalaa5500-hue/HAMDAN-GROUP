@@ -157,7 +157,7 @@ const translations = {
           fullDesc:
             "يقدم جراند ليفانت تجربة طعام شامية متكاملة تجمع بين الأطباق اليومية الطازجة، الشاميات، المقبلات الساخنة والباردة، المشويات، والبيتزا والمعجنات المحضرة يومياً بأعلى معايير الجودة.",
           location: "دبي — الجداف، مبنى حور 18",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: grandLevantImg,
           highlights: [
             "أطباق يومية متنوعة محضرة طازجة يومياً",
@@ -276,7 +276,7 @@ const translations = {
           fullDesc:
             "توفر شركة حمدان لخدمات رجال الأعمال دعماً شاملاً للمستثمرين ورواد الأعمال والشركات في دولة الإمارات، بدءاً من تأسيس الشركات واستخراج الرخص التجارية، مروراً بمعاملات الإقامة والعمل والعمال، وحتى تصديق المستندات والمتابعة الحكومية السريعة.",
           location: "دبي — الإمارات العربية المتحدة",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: businessServicesImg,
           highlights: [
             "تأسيس الشركات في البر الرئيسي والمناطق الحرة وإصدار الرخص التجارية",
@@ -382,7 +382,7 @@ const translations = {
           fullDesc:
             "تقدم شركة الحريف لصيانة السيارات (AL HAREEF AUTO MAINTENANCE) خدمات صيانة وإصلاح متكاملة عبر مركز الصيانة وأسطول مركبات الصيانة المتنقلة المجهزة، لنصل إلى سيارتك في موقعك أينما كنت وتوفر عليك عناء التنقل والانتظار.",
           location: "دبي — الإمارات العربية المتحدة (وخدمة متنقلة لموقعك)",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: alHareefImg,
           highlights: [
             "خدمة صيانة متنقلة (Mobile Service) نصل إليك في مكانك أينما كنت",
@@ -435,7 +435,7 @@ const translations = {
           fullDesc:
             "تقدم شركة حمدان للشحن والتخليص (HAMDAN SHIPPING & CLEARING) خدمات الشحن والتخليص الجمركي وتنسيق حركة البضائع والوثائق بكفاءة وموثوقية لخدمة الأفراد والشركات.",
           location: "دبي — الجداف، مبنى حور 18",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: shippingClearingImg,
           highlights: [
             "تنسيق عمليات الشحن ومتابعة التخليص الجمركي بسرعة وانضباط",
@@ -471,7 +471,7 @@ const translations = {
           fullDesc:
             "تقدم شركة هوف للمقاولات ش.ذ.م.م (WHOOV CONTRACTING L.L.C) خدمات المقاولات والأعمال الإنشائية والتشطيبات بدقة وانضباط عملي لدعم المشاريع السكنية والتجارية ضمن منظومة مجموعة حمدان.",
           location: "دبي — الإمارات العربية المتحدة",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: whoovContractingImg,
           highlights: [
             "تنفيذ منظم وفق المواصفات الفنية ومعايير السلامة",
@@ -507,7 +507,7 @@ const translations = {
           fullDesc:
             "تعمل شركة إن إس تي للتجارة العامة ش.ذ.م.م (N S T GENERAL TRADING L.L.C) في مجال التجارة العامة وتوريد المنتجات والسلع التجارية لتلبية احتياجات الشركات والسوق وفق معايير احترافية.",
           location: "دبي — الإمارات العربية المتحدة",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: nstGeneralTradingImg,
           highlights: [
             "توريد منتظم وموثوق يلبي متطلبات السوق والشركات",
@@ -554,16 +554,16 @@ const translations = {
         {
           id: "phone",
           label: "الهاتف المباشر",
-          value: "+971 55 998 7822",
+          value: "+971 55 870 0401",
           note: "متاح للاستفسارات والطلبات",
-          href: "tel:+971559987822",
+          href: "tel:+971558700401",
         },
         {
           id: "email",
           label: "البريد الإلكتروني",
-          value: "Hamdanco28@hotmail.com",
+          value: "hamdanco74@gmail.com",
           note: "للاستفسارات المؤسسية والأعمال",
-          href: "mailto:Hamdanco28@hotmail.com",
+          href: "mailto:hamdanco74@gmail.com",
         },
         {
           id: "hours",
@@ -762,7 +762,7 @@ const translations = {
           fullDesc:
             "Grand Levant delivers a complete Levantine dining experience featuring fresh daily dishes, Shamayat, hot and cold appetizers, grills, pasta, and oven-baked specialties prepared daily with consistent quality standards.",
           location: "Dubai — Al Jadaf, Hoor 18 Building",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: grandLevantImg,
           highlights: [
             "Varied daily dishes freshly prepared every day",
@@ -879,7 +879,7 @@ const translations = {
           fullDesc:
             "Hamdan Business Services provides comprehensive corporate support for investors, entrepreneurs, and established companies across the UAE—covering mainland and free zone setup, trade licensing, residency visas, labor services, and fast document attestation.",
           location: "Dubai — United Arab Emirates",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: businessServicesImg,
           highlights: [
             "Mainland & Free Zone company formation and trade license issuance",
@@ -985,7 +985,7 @@ const translations = {
           fullDesc:
             "Al Hareef Auto Maintenance provides complete maintenance and repair through its workshop and a fleet of equipped mobile service units, reaching your vehicle wherever you are to save time and hassle.",
           location: "Dubai — United Arab Emirates (Mobile Service to You)",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: alHareefImg,
           highlights: [
             "Mobile service units reaching you wherever you are",
@@ -1038,7 +1038,7 @@ const translations = {
           fullDesc:
             "Hamdan Shipping & Clearing provides shipping, customs clearance, and shipment coordination services with efficiency and clarity for individuals and businesses.",
           location: "Dubai — Al Jadaf, Hoor 18 Building",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: shippingClearingImg,
           highlights: [
             "Structured shipping coordination and customs clearance follow-up",
@@ -1074,7 +1074,7 @@ const translations = {
           fullDesc:
             "WHOOV Contracting L.L.C provides contracting, construction, and execution services with practical discipline to support residential and commercial projects within Hamdan Group.",
           location: "Dubai — United Arab Emirates",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: whoovContractingImg,
           highlights: [
             "Organized execution aligned with technical and safety standards",
@@ -1110,7 +1110,7 @@ const translations = {
           fullDesc:
             "N S T General Trading L.L.C operates in general trading and commercial supply, serving business and market requirements with dependable sourcing and coordination.",
           location: "Dubai — United Arab Emirates",
-          phone: "+971 55 998 7822",
+          phone: "+971 55 870 0401",
           image: nstGeneralTradingImg,
           highlights: [
             "Dependable supply tailored to business and market demands",
@@ -1157,16 +1157,16 @@ const translations = {
         {
           id: "phone",
           label: "Direct Phone",
-          value: "+971 55 998 7822",
+          value: "+971 55 870 0401",
           note: "Available for inquiries & orders",
-          href: "tel:+971559987822",
+          href: "tel:+971558700401",
         },
         {
           id: "email",
           label: "Email Address",
-          value: "Hamdanco28@hotmail.com",
+          value: "hamdanco74@gmail.com",
           note: "For corporate & business inquiries",
-          href: "mailto:Hamdanco28@hotmail.com",
+          href: "mailto:hamdanco74@gmail.com",
         },
         {
           id: "hours",
